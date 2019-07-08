@@ -156,10 +156,12 @@
                             if (getSubMenu(arr, element.id, element) >= 1) {
                                 if(level == 0){
                                     output += "<li>";
+                                    output += "<a href='#' class='dropdown-toggle' data-toggle='dropdown'>" + element.title + "<b class='caret'></b></a>";
                                 }else{
                                     output += "<li class='dropdown-submenu'>";
+                                    output += "<a href='#' class='dropdown-toggle' data-toggle='dropdown'>" + element.title + "</a>";
                                 }
-                                output += "<a href='#' class='dropdown-toggle' data-toggle='dropdown'>" + element.title + "<b class='caret'></b></a>";
+                                
                             } else {
                                 output += "<li>";
                                 output += "<a href='#'>" + element.title + "</a>";
